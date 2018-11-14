@@ -1,6 +1,6 @@
 {
   "name": "react-native-rotate-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "native",
     "component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonnguyenitc/react-native-rotate-component.git"
+  },
   "author": "bonnguyenitc",
   "license": "ISC"
 }
