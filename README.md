@@ -3,9 +3,6 @@
 `npm i react-native-rotate-component --save`
 
 ### Props
-`durationBack`
-`durationGo`
-`backEnable`
 Name | Type
 ------------ | -------------
 CdurationBack | Number
