@@ -5,7 +5,7 @@
 ### Props
 Name | Type
 ------------ | -------------
-CdurationBack | Number
+durationBack | Number
 durationGo | Number
 backEnable | Boolean
 
