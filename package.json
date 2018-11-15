@@ -1,6 +1,6 @@
 {
   "name": "react-native-rotate-component",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "rotate",
     "react",
     "native",
-    "component"
+    "component",
+    "animation",
+    "animated",
+    "navigation",
+    "react native animation"
   ],
   "repository": {
     "type": "git",
