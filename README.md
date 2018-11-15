@@ -24,7 +24,14 @@ import RotateComponent from 'react-native-rotate-component';
 
 ...
 
-<RotateComponent durationBack={500} durationGo={300} backEnable={this.state.back}>
+<RotateComponent 
+  durationBack={500} 
+  durationGo={500} 
+  backEnable={this.state.back1} 
+  inputRange={[0, 1]} 
+  outputRangeGo={['0deg', '180deg']} 
+  outputRangeBack={['180deg', '0deg']}
+>
   <Icon name="arrow-back" type="Ionicons" />
 </RotateComponent>
 ```
