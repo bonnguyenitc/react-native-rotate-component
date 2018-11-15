@@ -12,7 +12,7 @@ backEnable | Boolean
 ### Demo
 Install for Arrow-back
 
-![alt text](https://github.com/bonnguyenitc/react-native-rotate-component/blob/master/screen/demo.gif)
+![animatable-attention](https://github.com/bonnguyenitc/react-native-rotate-component/blob/master/screen/demo.gif)
 
 ### Example
 
