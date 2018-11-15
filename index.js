@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity, Animated, Easing } from 'react-native';
+import { Animated, Easing } from 'react-native';
 
 export default class RotateComponent extends Component {
 	constructor(props) {
@@ -26,18 +26,32 @@ export default class RotateComponent extends Component {
 				duration: this.props.durationGo,
 				easing: Easing.linear,
 				useNativeDriver: true
-			}).start();
+			}).start(() => {
+				this.state.rotateBack.setValue(0)
+			});
+		} else {
+			Animated.timing(this.state.rotateBack, {
+				toValue: 1,
+				duration: this.props.durationGo,
+				easing: Easing.linear,
+				useNativeDriver: true
+			}).start(() => {
+				this.state.rotateGo.setValue(0)
+			});
 		}
 	}
 
 	render() {
+		const inputRange = this.props.inputRange;
+		const outputRangeGo = this.props.outputRangeGo;
+		const outputRangeBack = this.props.outputRangeBack;
 		const rotateGo = this.state.rotateGo.interpolate({
-			inputRange: [0, 1],
-			outputRange: ['0deg','180deg']
+			inputRange,
+			outputRange: outputRangeGo
 		})
 		const rotateBack = this.state.rotateBack.interpolate({
-			inputRange: [0, 1],
-			outputRange: ['180deg','0deg']
+			inputRange,
+			outputRange: outputRangeBack
 		})
 		const styleArrow = this.props.backEnable?rotateGo:rotateBack;
 		return(

@@ -8,6 +8,9 @@ Name | Type
 durationBack | Number
 durationGo | Number
 backEnable | Boolean
+inputRange | Array
+outputRangeGo | Array
+outputRangeBack | Array
 
 ### Demo
 Install for Arrow-back
