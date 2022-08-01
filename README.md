@@ -15,7 +15,7 @@ outputRangeBack | Array
 ### Demo
 Install for Arrow-back
 
-![demo](https://github.com/bonnguyenitc/react-native-rotate-component/blob/master/screen/demo.gif)
+![demo](https://raw.githubusercontent.com/bonnguyenitc/react-native-rotate-component/master/screen/demo.gif)
 
 ### Example
 
